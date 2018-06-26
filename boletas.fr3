@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.1.5" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43070,7624528009" ReportOptions.Description.Text="" ReportOptions.LastChange="43070,9092193056" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="dbdatos" DataSetName="dbdatos"/>
+    <item DataSet="dbreporte" DataSetName="dbreporte"/>
+  </Datasets>
+  <Variables>
+    <item Name=" variable"/>
+    <item Name="finicio"/>
+    <item Name="ffinal"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="117,16543" Left="0" Top="18,89765" Width="740,409927">
+      <TfrxMemoView Name="Memo1" Left="8,33859" Top="5" Width="272,12616" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="BOLETAS EMITIDAS"/>
+      <TfrxMemoView Name="Memo3" Left="120,94496" Top="98,26778" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Documento"/>
+      <TfrxMemoView Name="Memo4" Left="8,33859" Top="98,26778" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Fecha"/>
+      <TfrxMemoView Name="Memo6" Left="385,51206" Top="98,26778" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Boleta"/>
+      <TfrxMemoView Name="Memo8" Left="563,14997" Top="98,26778" Width="94,48825" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Precio"/>
+      <TfrxMemoView Name="Memo10" Left="8,33859" Top="49,13389" Width="264,5671" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Usuario [dbreporte.&#34;NAMES&#34;]"/>
+      <TfrxLineView Name="Line1" Left="0" Top="116,3859" Width="744,56741" Height="0" Color="0" Frame.Typ="4" Frame.Width="1,5"/>
+      <TfrxMemoView Name="Memo13" Left="536,69326" Top="0" Width="200,31509" Height="18,89765" Text="Fecha Inicial: [finicio]"/>
+      <TfrxMemoView Name="Memo14" Left="536,69326" Top="37,7953" Width="200,31509" Height="18,89765" Text="Fecha Final: [ffinal]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="196,53556" Width="740,409927" ColumnWidth="0" ColumnGap="0" DataSet="dbreporte" DataSetName="dbreporte" RowCount="0">
+      <TfrxMemoView Name="Memo2" Left="120,94496" Top="3" Width="249,44898" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dbreporte.&#34;TYPEDOC&#34;]"/>
+      <TfrxMemoView Name="Memo5" Left="8,33859" Top="3,77952999999999" Width="94,48825" Height="18,89765" Text="[dbreporte.&#34;EMIT&#34;]"/>
+      <TfrxMemoView Name="Memo7" Left="385,51206" Top="3,77952999999999" Width="151,1812" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dbreporte.&#34;TICKET&#34;]"/>
+      <TfrxMemoView Name="Memo9" Left="563,14997" Top="3,77952999999999" Width="94,48825" Height="18,89765" DisplayFormat.ThousandSeparator="." DisplayFormat.FormatStr="$#,##0" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dbreporte.&#34;PRICE&#34;]"/>
+    </TfrxMasterData>
+    <TfrxReportSummary Name="ReportSummary1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="34,01577" Left="0" Top="279,68522" Width="740,409927">
+      <TfrxMemoView Name="Memo11" Left="321,92146" Top="7,77953000000002" Width="181,41744" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Cantidad [dbdatos.&#34;CANT&#34;]"/>
+      <TfrxMemoView Name="Memo12" Left="527,47279" Top="7,77953000000002" Width="177,63791" Height="18,89765" DisplayFormat.ThousandSeparator="." DisplayFormat.FormatStr="$#,##0" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Total [dbdatos.&#34;TOTAL&#34;]"/>
+      <TfrxLineView Name="Line2" Left="0" Top="3,77953000000002" Width="737,00835" Height="0" Color="0" Frame.Color="15000804" Frame.Typ="4"/>
+    </TfrxReportSummary>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="336,37817" Width="740,409927">
+      <TfrxMemoView Name="Memo15" Left="642,5201" Top="3,77953000000002" Width="94,48825" Height="18,89765" Text="Pag [Page]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>
